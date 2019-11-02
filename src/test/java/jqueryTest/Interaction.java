@@ -11,7 +11,7 @@ public class Interaction {
 
 	public WebDriver driver;
 	
-	@Test
+
 	public void draggableTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		driver = new ChromeDriver();
@@ -38,4 +38,6 @@ public class Interaction {
 
 		driver.quit();
 	}
+	
+	
 }

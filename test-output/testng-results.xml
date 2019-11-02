@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10258" started-at="2019-10-26T15:10:53Z" finished-at="2019-10-26T15:11:03Z">
+  <suite name="Default suite" duration-ms="11797" started-at="2019-10-26T20:06:17Z" finished-at="2019-10-26T20:06:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10258" started-at="2019-10-26T15:10:53Z" finished-at="2019-10-26T15:11:03Z">
+    <test name="Default test" duration-ms="11797" started-at="2019-10-26T20:06:17Z" finished-at="2019-10-26T20:06:29Z">
       <class name="jqueryTest.Interaction">
-        <test-method status="PASS" signature="draggableTest()[pri:0, instance:jqueryTest.Interaction@7823a2f9]" name="draggableTest" duration-ms="10220" started-at="2019-10-26T15:10:53Z" finished-at="2019-10-26T15:11:03Z">
+        <test-method status="PASS" signature="droppableTest()[pri:0, instance:jqueryTest.Interaction@7823a2f9]" name="droppableTest" duration-ms="11772" started-at="2019-10-26T20:06:17Z" finished-at="2019-10-26T20:06:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- draggableTest -->
+        </test-method> <!-- droppableTest -->
       </class> <!-- jqueryTest.Interaction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
