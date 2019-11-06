@@ -11,7 +11,6 @@ public class Interaction {
 
 	public WebDriver driver;
 	
-
 	public void draggableTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		driver = new ChromeDriver();
@@ -38,6 +37,63 @@ public class Interaction {
 
 		driver.quit();
 	}
+	
+
+	public void dropppable() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+		driver = new ChromeDriver();
+		
+		driver.get("https://jqueryui.com");
+		
+		driver.findElement(By.linkText("Droppable")).click();
+		
+		Thread.sleep(3000);
+		
+		driver.switchTo().frame(0);
+		
+		Actions myaction = new Actions(driver);
+		
+		myaction.dragAndDrop(driver.findElement(By.id("draggable")),
+				driver.findElement(By.id("droppable"))).build().perform();
+		
+		Thread.sleep(3000);
+		driver.switchTo().defaultContent();
+		driver.quit();
+		
+	}
+	
+	
+	@Test
+	public void resizable() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+		driver = new ChromeDriver();
+		
+		driver.get("https://jqueryui.com");
+		
+		driver.findElement(By.linkText("Resizable")).click();
+		
+		Thread.sleep(3000);
+		
+		driver.switchTo().frame(0);
+		
+		Actions myaction = new Actions(driver);
+		
+		WebElement resizeButton = driver.findElement(By.xpath("//*[@id='resizable']/div[3]"));
+		System.out.println(resizeButton.toString());
+		myaction.dragAndDrop(resizeButton, driver.findElement(By.id("resizable"))).build().perform();
+		
+		Thread.sleep(3000);
+		driver.switchTo().defaultContent();
+		driver.quit();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }
