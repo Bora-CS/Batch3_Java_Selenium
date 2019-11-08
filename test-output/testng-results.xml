@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9991" started-at="2019-11-06T01:44:17Z" finished-at="2019-11-06T01:44:27Z">
+  <suite name="Default suite" duration-ms="18617" started-at="2019-11-08T01:48:44Z" finished-at="2019-11-08T01:49:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9991" started-at="2019-11-06T01:44:17Z" finished-at="2019-11-06T01:44:27Z">
+    <test name="Default test" duration-ms="18617" started-at="2019-11-08T01:48:44Z" finished-at="2019-11-08T01:49:03Z">
       <class name="jqueryTest.Interaction">
-        <test-method status="PASS" signature="resizable()[pri:0, instance:jqueryTest.Interaction@7823a2f9]" name="resizable" duration-ms="9958" started-at="2019-11-06T01:44:17Z" finished-at="2019-11-06T01:44:27Z">
+        <test-method status="PASS" signature="selectable()[pri:0, instance:jqueryTest.Interaction@7823a2f9]" name="selectable" duration-ms="18578" started-at="2019-11-08T01:48:44Z" finished-at="2019-11-08T01:49:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resizable -->
+        </test-method> <!-- selectable -->
       </class> <!-- jqueryTest.Interaction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

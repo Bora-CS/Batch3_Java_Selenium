@@ -1,5 +1,7 @@
 package jqueryTest;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -62,8 +64,7 @@ public class Interaction {
 		
 	}
 	
-	
-	@Test
+
 	public void resizable() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		driver = new ChromeDriver();
@@ -87,6 +88,65 @@ public class Interaction {
 		driver.quit();
 		
 	}
+	
+	@Test
+	public void selectable() {
+		
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+		driver = new ChromeDriver();
+		
+		driver.get("https://jqueryui.com");
+		
+		driver.findElement(By.linkText("Selectable")).click();
+		
+		waitSecond(3);
+		
+		driver.switchTo().frame(0);
+		
+		List<WebElement> selects = driver.findElements(By.xpath("//*[@id='selectable']/*"));
+		
+		for(  WebElement elem  :   selects  ) {
+			elem.click();
+			waitSecond(1);
+		}
+		
+		driver.switchTo().defaultContent();
+		
+		driver.quit();
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public void waitSecond(int seconds) {
+		try {
+			Thread.sleep(seconds*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
